@@ -84,7 +84,7 @@
 		text-align:center;
 		line-height:1;
 	}
-	#tagline{
+	.tagline{
 		display:none;
 	}
 	.navbuttons{
@@ -184,61 +184,58 @@
 		opacity:.075;
 		z-index:1;
 	}
-	.footer{
-		position:fixed;
-		bottom:0px;
-		height:1.5vw;
+	#headerBackground{
+	      	position:relative;
+	      	top:0vw;
+	      	background-color:#5A6E40;	
+	      	z-index:3;
+	      	height:12.5vw;
+	      	opacity:.5;
+      	}
+      	.title{
+		position:absolute;
+	      	width:100vw;
+		color:white;
+		font-family:Arbutus Slab;
+		font-style:bolder;
+	      	top:0vw;
+		font-size:4vw;
+	      	padding-top:1vw;
+		text-align:center;
+		line-height:1;
+		z-index:4;
+	      	opacity:1;
+	}
+	.tagline{
+		position:absolute;
+	      	top:5vw;
 		width:100vw;
 		color:white;
-		background:black;
-		font-style:bold;
-		font-size:1vw;
-		padding-top:0.5vw;
-		text-align:center;
-		line-height:1;
-		z-index:6;
-	}
-	.title{
-		position:static;
-		width:100vw;
-		color:black;
 		font-family:Arbutus Slab;
-		font-style:bold;
-		font-size:7vw;
-		margin-top:1.25vw;
+      		font-style:bolder;
+		font-size:2vw;
+	      	padding-bottom: 1vw;
 		text-align:center;
 		line-height:1;
-	}
-	#tagline{
-		position:static;
-		width:100vw;
-		color:black;
-		font-family:Arbutus Slab;
-		font-style:bold;
-		font-size:3vw;
-		margin-top:0vw;
-		text-align:center;
-		line-height:1;
+		z-index:4;
+	      	opacity:1;
 	}
 	.navbuttons{
-		margin-top:1vw;
-		position: -webkit-sticky;
-		position:sticky;
-		top:0vw;
-		background:white;
-		width:100vw;
-		padding-top:1vw;
+		top: 8vw;
+		position:absolute;
+		width:100vw;	
 		text-align:center;
-		opacity:1;
-		z-index:9;
+		z-index:4;
 	}
 	.navbuttons a img{
+		position:relative;
 		opacity:1;
 		width:3.5vw;
 		height:3.5vw;
-		padding-left: 4.5vw;
-		padding-right: 4.5vw;
+		padding-left: 4vw;
+		padding-right: 4vw;
 		border-radius:50%;
+		z-index:4;
 	}
 	.navbuttons a img:hover{
 		opacity:.5;
@@ -310,23 +307,42 @@
 		font-weight:bold;
 		text-align:center;
 		z-index:8;
-
 	}
-
+	#footerBackground{
+		position:fixed;
+	      	background-color:#5A6E40;	
+	      	z-index:10;
+	      	width: 100vw;
+	      	height:3.5vw;
+	      	bottom: 0px;
+	      	opacity:.5;
+      	}
+      	.footer {
+      		position:fixed;
+		bottom:0px;
+		width:100vw;
+		font-size:1.5vw;
+		color:white;
+		text-align:center;
+		line-height:1;
+		padding-top:1vw;
+		padding-bottom:1vw;
+		z-index:15;
+	}
 	}
 
 </style>
 <head>
 <body>
+	<div id="headerBackground"></div>
 	<p class="title">BRAD DAVIS</p>
-	<p id="tagline">Simple. Clean. Code.</p>
+	<p class="tagline">Simple. Clean. Code.</p>
 	<div class="navbuttons">
-		<a href="https://www.braddavistech.com"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/homenav.jpg" alt="Home Page"></a>
-		<a href="https://www.linkedin.com/in/braddavistech/" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/linkedinnav.jpg" alt="LikedIn"></a>
-		<a href="https://github.com/braddavistech" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/githubnav.jpg" alt="GitHub"></a>
-		<a href="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/9875f6d1/images/Brad%20Davis.pdf" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/documentnav.jpg" alt="Resume"></a>
-		<a href="http://www.radbraddavis.com" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/bloggernav.jpg" alt="Blog"></a>
-	</div>
+		<a href="https://www.braddavistech.com" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/1a5497d8/images/Homenav.jpg" alt="Portfolio"></a>
+		<a href="https://www.linkedin.com/in/braddavistech/" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/194a3df4/images/Linkedinnav.jpg" alt="LikedIn"></a>
+		<a href="https://github.com/braddavistech" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/194a3df4/images/Githubnav.jpg" alt="GitHub"></a>
+		<a href="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/9875f6d1/images/Brad%20Davis.pdf" target="_blank"><img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/194a3df4/images/Documentnav.jpg" alt="Resume"></a>
+		</div>
 	<div id="portfoliobackground">
 
 
@@ -360,16 +376,13 @@
 			<a href="https://github.com/braddavistech/BirthdayGame/blob/master/index.html" id="gitLink">Click here to see GitHub code.</a><br>
 			<p id="proWork">This game reflects my first work with Javascript. It also uses HTML and CSS. The space bar makes my nephew jump and the left and right arrows make him move. The object is to score 100 points and collect the trophy. Be careful of the skull and bones as they will take points away.
 			<br>(Mobile devices are not currently supported.)
-			<br><br><br><br></p>
-
-
-			
+			<br><br><br><br></p>	
 		</div>
 
 	</div>
-	<img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/Nashville.JPG" id="background">
-	<div class="footer">
-		<h4> Coding performed by Brad Davis, Copyright BradDavisTech.com 2018.</h4>
-	</div>
+	<!--<img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/Nashville.JPG" id="background">-->
+     	<div id="footerBackground"></div>
+	<h4 class="footer"> Coding performed by Brad Davis, Copyright BradDavisTech.com 2018.</h4>
+
 </body>
 </html>
