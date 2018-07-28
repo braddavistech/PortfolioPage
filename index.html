@@ -192,27 +192,10 @@
 		margin:0px;
 		padding:0px;
 	}
-	#background{
-		position:fixed;
-		bottom:0px;
-		padding:0px;
-		margin-left:0px;
-		margin-bottom:0px;
-		width:100vw;
-		opacity:.075;
-		z-index:1;
-	}
-	      	#headerBackground{
-	      	position:relative;
-	      	top:0vw;
-	      	background-color:#5A6E40;	
-	      	z-index:3;
-	      	height:12.5vw;
-	      	opacity:.5;
-      	}
 	.title{
-		position:absolute;
+		position:relative;
 	      	width:100vw;
+	      	background-color:#5A6E40;
 		color:white;
 		font-family:Arbutus Slab;
 		font-style:bolder;
@@ -225,10 +208,11 @@
 	      	opacity:1;
 	}
 	.tagline{
-		position:absolute;
+		position:relative;
 	      	top:5vw;
 		width:100vw;
 		color:white;
+	      	background-color:#5A6E40;
 		font-family:Arbutus Slab;
       		font-style:bolder;
 		font-size:2vw;
@@ -239,8 +223,10 @@
 	      	opacity:1;
 	}
 	.navbuttons{
-		top: 8vw;
-		position:absolute;
+		top: 0vw;
+		position:sticky;
+	      	border:.75vw solid white;
+	      	background-color:#5A6E40;
 		width:100vw;	
 		text-align:center;
 		z-index:4;
@@ -352,7 +338,6 @@
 </style>
 <head>
 <body>
-	<div id="headerBackground"></div>
 	<p class="title">BRAD DAVIS</p>
 	<p class="tagline">Simple. Clean. Code.</p>
 	<div class="navbuttons">
@@ -398,7 +383,6 @@
 		</div>
 
 	</div>
-	<!--<img src="https://cdn.rawgit.com/braddavistech/braddavistech.github.io/7050e2f1/images/Nashville.JPG" id="background">-->
      	<div id="footerBackground"></div>
 	<h4 class="footer"> Coding performed by Brad Davis, Copyright BradDavisTech.com 2018.</h4>
 
